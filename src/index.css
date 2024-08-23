@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container{
+    max-width: 1556px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.contact-middle{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 25px; 
+}
+.contact-img{
+    width: 200px;
+    height: 200px;
+    padding: 25px;
+}
+.Youtuber{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 25px; 
+}
