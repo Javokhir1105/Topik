@@ -7,8 +7,10 @@ import rasm5 from '../../assets/target.png'
 import rasm6 from '../../assets/key.png'
 import { Modal } from 'antd'
 import { ToastContainer, toast } from 'react-toastify'
+import { useTranslation } from 'react-i18next'
 
 function Contact() {
+    const {t}= useTranslation()
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
@@ -60,47 +62,47 @@ function Contact() {
     const notify = () => toast("Wow so easy!");
     return (
         <div className='contact'>
-            <div className="container max-w-screen-2xl  ">
-                <div className="contact-container text-center ">
-                    <h1 className="contact-title text-5xl">TOPIK academy aniq siz uchun agar siz:</h1>
+            <div className="container max-w-screen-2xl mt-24 ">
+                <div className="contact-container text-center mt-28 ">
+                    <h1 className="contact-title text-5xl">{t('contact.contact-title1')}</h1>
                     <div className="contact-middle ">
                         <div className="contact-top flex gap-6 ">
                             <ul className="contact-list max-w-sm  max-h-70 allign-center">
                                 <img src={rasm} alt="option" className="contact-img bg-green-100 rounded-full p-6 ml-16" />
-                                <p className="contact-text text-2xl"><span className='contact-span text-blue-700 '>Qisqa</span> muddat ichida Koreys tilida gapirishni istaysiz</p>
+                                <p className="contact-text text-2xl"><span className='contact-span text-blue-700 '>{t('contact.contact-title2')}</span> {t('contact.contact-title3')}</p>
                             </ul>
                             <ul className="contact-list max-w-sm  max-h-70 allign-center">
                                 <img src={rasm2} alt="rocket" className="contact-img bg-green-100 rounded-full p-6 ml-16" />
-                                <p className="contact-text text-2xl">Koreys tili o’rganib o’z <span className='contact-span text-blue-700 '>karyerangizni</span>  qurmoqchisiz</p>
+                                <p className="contact-text text-2xl">{t('contact.contact-title4')} <span className='contact-span text-blue-700 '>{t('contact.contact-title5')}</span>{t('contact.contact-title6')}</p>
                             </ul>
                             <ul className="contact-list max-w-sm  max-h-70 allign-center">
                                 <img src={rasm3} alt="money" className="contact-img bg-green-100 rounded-full p-6 ml-16" />
-                                <p className="contact-text text-2xl">Topik sertifikatini olib Koreyaning nufuzli universitetlariga <span className='contact-span text-blue-700 '>GRAND</span> yutmoqchisiz</p>
+                                <p className="contact-text text-2xl">{t('contact.contact-title7')} <span className='contact-span text-blue-700 '>GRAND</span>{t('contact.contact-title8')}</p>
                             </ul>
                         </div>
                         <div className="contact-buttom flex gap-6 mt-8">
                             <ul className="contact-list max-w-sm  max-h-70 allign-center">
                                 <img src={rasm4} alt="bag" className="contact-img bg-green-100 rounded-full p-6 ml-16" />
-                                <p className="contact-text text-2xl">Janubiy Koreya davlatida <span className='contact-span text-blue-700 '>o'qish</span> va <span className='contact-span text-blue-700 '>ishlash</span> uchun ketmoqchisiz</p>
+                                <p className="contact-text text-2xl">{t('contact.contact-title9')} <span className='contact-span text-blue-700 '>{t('contact.contact-title10')}</span> {t('contact.contact-title11')}</p>
                             </ul>
                             <ul className="contact-list max-w-sm  max-h-70 allign-center">
                                 <img src={rasm5} alt="target" className="contact-img bg-green-100 rounded-full p-6 ml-16" />
-                                <p className="contact-text text-2xl"> Koreys tilini o’rta darajda bilasiz va darajangizni <span className='contact-span text-blue-700 '>oshirmoqchisiz</span></p>
+                                <p className="contact-text text-2xl"> {t('contact.contact-title12')} <span className='contact-span text-blue-700 '>{t('contact.contact-title13')}</span></p>
                             </ul>
                             <ul className="contact-list max-w-sm  max-h-70 allign-center">
                                 <img src={rasm6} alt="key" className="contact-img bg-green-100 rounded-full p-6 ml-16" />
-                                <p className="contact-text text-2xl">Ko’p yillardan buyon o’qib ham <span className='contact-span text-blue-700 '>natijaga</span> chiqa olmayapsiz</p>
+                                <p className="contact-text text-2xl">{t('contact.contact-title14')} <span className='contact-span text-blue-700 '>{t('contact.contact-title15')}</span> {t('contact.contact-title16')}</p>
                             </ul>
                         </div>
                     </div>
-                    <button onClick={showModal} className="contact-btn mt-6 p-8 px-28 border-2 rounded-full border-green-700 bg-emerald-500 text-white text-xl">Ha, bu men</button>
+                    <button onClick={showModal} className="contact-btn mt-6 p-8 px-28 border-2 rounded-full border-green-700 bg-emerald-500 text-white text-xl">{t('contact.contact-title20')}</button>
                     <Modal className='Modal' open={isModalOpen} onOk={handleOk} onCancel={handleCancel} footer={""}>
                         <form className='form text-center' onSubmit={sendMessageToTelegram}>
-                            <h1 className="header-m-h1 text-3xl">O'z ma'lumotlaringizni qoldiring</h1>
-                            <p className="header-m-p text-xl">Sizga to'liqroq ma'lumot berish uchun mutaxassislarimiz siz bilan bog'lanishadi</p>
+                            <h1 className="header-m-h1 text-3xl">{t('contact.contact-title17')}</h1>
+                            <p className="header-m-p text-xl">{t('contact.contact-title18')}</p>
                             <input className='Contact-input border-3 border-black-400 mt-6 mb-4 w-5/6 h-10' type="text" minLength={2} placeholder='name' onChange={(e) => setName(e.target.value)} required />
                             <input className='Contact-input border-3 border-black-400 w-5/6 h-10' type='number' minLength={2} placeholder='+998987654321' onChange={(e) => setPhone(e.target.value)} required /><br />
-                            <button type='submit' className="header-btn border-2 p-2 px-24 mt-6 border-green-400 bg-green-500">Yuborish</button>
+                            <button type='submit' className="header-btn border-2 p-2 px-24 mt-6 border-green-400 bg-green-500">{t('contact.contact-title19')}</button>
                         </form>
                     </Modal>
                 </div>
