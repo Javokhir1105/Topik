@@ -36,7 +36,7 @@ export default function Question() {
     return (
         <div className='question' id='question'>
             <div className="container">
-                <div className="question__container">
+                <div className="question__container items-center ">
                     <ul className='question__list'>
                         <h1 className='question__title text-4xl'>{t('last.last-text1')}</h1>
                         <p className='question__text'>{t('last.last-text2')}</p>
