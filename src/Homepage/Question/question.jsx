@@ -34,14 +34,14 @@ export default function Question() {
         });
 };  
     return (
-        <div className='question' id='question'>
-            <div className="container">
-                <div className="question__container items-center ">
-                    <ul className='question__list'>
-                        <h1 className='question__title text-4xl'>{t('last.last-text1')}</h1>
-                        <p className='question__text'>{t('last.last-text2')}</p>
+        <div className='question max-w-screen-2xl  max-md: m-0 h-full text-center ' id='question'>
+            <div className="container max-md-text-center">
+                <div className="question__container max-w-screen-2xl items-center max-md:block text-center max-sm:mr-12 ">
+                    <ul className='question__list max-md: text-center '>
+                        <h1 className='question__title text-left text-4xl max-md:text-center py-2 text-5xl max-[440px]:ml-12'>{t('last.last-text1')}</h1>
+                        <p className='question__text text-left max-md:text-center text-2xl py-4 mb-4'>{t('last.last-text2')}</p>
                     </ul>
-                    <ul className='question__items'>
+                    <ul className='question__items max-lg:ml-12 max-sm:ml-0'>
                         <form id="myForm" onSubmit={sendMessageToTelegram}>
                             <li className='question__item '><input className='question__name px-6' type="text" id='name' placeholder={t('last.last-text3')}  onChange={(e) => setName(e.target.value)}required /></li>
                             <li className='question__item'><input className='question__number px-4' type="phone" name="" id="number" onChange={(e) => setPhone(e.target.value)} placeholder='          +998' /></li>

@@ -64,33 +64,33 @@ function Contact() {
         <div className='contact'>
             <div className="container max-w-screen-2xl mt-24 ">
                 <div className="contact-container text-center mt-28 ">
-                    <h1 className="contact-title text-5xl">{t('contact.contact-title1')}</h1>
-                    <div className="contact-middle ">
-                        <div className="contact-top flex gap-6 ">
-                            <ul className="contact-list max-w-sm  max-h-70 allign-center">
-                                <img src={rasm} alt="option" className="contact-img bg-green-100 rounded-full p-6 ml-16" />
+                    <h1 className="contact-title text-5xl max-md:text-2xl ">{t('contact.contact-title1')}</h1>
+                    <div className="contact-middle max-lg:flex justify-evenly items-center max-sm:block ">
+                        <div className="contact-top flex gap-6 max-lg:block ">
+                            <ul className="contact-list max-w-sm  max-h-70 py-0 mt-14 align-center max-h-md py-4 max-sm:max-w-full">
+                                <img src={rasm} alt="option" className="contact-img bg-green-100 rounded-full p-6 ml-16 max-sm:ml-40 max-[440px]:ml-16" />
                                 <p className="contact-text text-2xl"><span className='contact-span text-blue-700 '>{t('contact.contact-title2')}</span> {t('contact.contact-title3')}</p>
                             </ul>
-                            <ul className="contact-list max-w-sm  max-h-70 allign-center">
-                                <img src={rasm2} alt="rocket" className="contact-img bg-green-100 rounded-full p-6 ml-16" />
+                            <ul className="contact-list max-w-sm  max-h-70 align-center max-h-md py-4 max-sm:max-w-full mt-12">
+                                <img src={rasm2} alt="rocket" className="contact-img bg-green-100 rounded-full p-6 ml-16 max-sm:ml-40 max-[440px]:ml-16" />
                                 <p className="contact-text text-2xl">{t('contact.contact-title4')} <span className='contact-span text-blue-700 '>{t('contact.contact-title5')}</span>{t('contact.contact-title6')}</p>
                             </ul>
-                            <ul className="contact-list max-w-sm  max-h-70 allign-center">
-                                <img src={rasm3} alt="money" className="contact-img bg-green-100 rounded-full p-6 ml-16" />
+                            <ul className="contact-list max-w-sm  max-h-70 align-center max-h-md py-4 max-sm:max-w-full mt-8">
+                                <img src={rasm3} alt="money" className="contact-img bg-green-100 rounded-full p-6 ml-16 max-sm:ml-40 max-[440px]:ml-16" />
                                 <p className="contact-text text-2xl">{t('contact.contact-title7')} <span className='contact-span text-blue-700 '>GRAND</span>{t('contact.contact-title8')}</p>
                             </ul>
                         </div>
-                        <div className="contact-buttom flex gap-6 mt-8">
-                            <ul className="contact-list max-w-sm  max-h-70 allign-center">
-                                <img src={rasm4} alt="bag" className="contact-img bg-green-100 rounded-full p-6 ml-16" />
+                        <div className="contact-buttom flex gap-6 mt-8 max-lg:block mb-12">
+                            <ul className="contact-list max-w-sm  max-h-70 align-center max-h-md py-8 max-sm:max-w-full">
+                                <img src={rasm4} alt="bag" className="contact-img bg-green-100 rounded-full p-6 ml-16 max-sm:ml-40 max-[440px]:ml-16" />
                                 <p className="contact-text text-2xl">{t('contact.contact-title9')} <span className='contact-span text-blue-700 '>{t('contact.contact-title10')}</span> {t('contact.contact-title11')}</p>
                             </ul>
-                            <ul className="contact-list max-w-sm  max-h-70 allign-center">
-                                <img src={rasm5} alt="target" className="contact-img bg-green-100 rounded-full p-6 ml-16" />
+                            <ul className="contact-list max-w-sm  max-h-70 align-center max-h-md py-8 max-sm:max-w-full">
+                                <img src={rasm5} alt="target" className="contact-img bg-green-100 rounded-full p-6 ml-16 max-sm:ml-40 max-[440px]:ml-16" />
                                 <p className="contact-text text-2xl"> {t('contact.contact-title12')} <span className='contact-span text-blue-700 '>{t('contact.contact-title13')}</span></p>
                             </ul>
-                            <ul className="contact-list max-w-sm  max-h-70 allign-center">
-                                <img src={rasm6} alt="key" className="contact-img bg-green-100 rounded-full p-6 ml-16" />
+                            <ul className="contact-list max-w-sm  max-h-70 align-center max-h-md py-8 max-sm:max-w-full ">
+                                <img src={rasm6} alt="key" className="contact-img bg-green-100 rounded-full p-6 ml-16 max-sm:ml-40 max-[440px]:ml-16" />
                                 <p className="contact-text text-2xl">{t('contact.contact-title14')} <span className='contact-span text-blue-700 '>{t('contact.contact-title15')}</span> {t('contact.contact-title16')}</p>
                             </ul>
                         </div>

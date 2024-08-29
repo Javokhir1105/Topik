@@ -11,7 +11,7 @@ function Login() {
     <div className='Login'>
       <div className="container text-center  max-w-screen-xl ">
         <h1 className="login-title text-5xl ">{t('login.login-text1')}</h1>
-        <div className="login-container flex ml-20 gap-16">
+        <div className="login-container flex ml-20 gap-16 max-xl:ml-0 gap-8 max-lg:block">
           <Card img={rasm} title="Intiensive" text={t('login.login-text2')} price={t('login.login-text3')} />
           <Card img={rasm2} title="Odatiy" text={t('login.login-text4')} price={t('login.login-text5')} />
           <Card className="Login-card ml-4" img={rasm3} title="individual" text={t('login.login-text6')} price={t('login.login-text7')} />

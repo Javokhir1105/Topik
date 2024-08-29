@@ -80,5 +80,9 @@
         "last-text2":"Ma’lumotlaringizni qoldiring siz bilan bog’lanib barcha savollaringizga javob beramiz.",
         "last-text3":" Ismingiz",
         "last-text4":"Ariza qoldirish"
+    },
+    "card":{
+        "card-title":"Odatiy",
+        "card-title1":"Bepul darsga o'z joyingizni band qilish uchun ma'lumotlaringizni qoldiring va biz siz bilan tez orada bog'lanamiz"
     }
 }

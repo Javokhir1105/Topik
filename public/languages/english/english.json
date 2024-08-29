@@ -80,5 +80,9 @@
         "last-text2": "Leave your information, and we will contact you to answer all your questions.",
         "last-text3": "Your Name",
         "last-text4": "Submit Application"
+    },
+    "card": {
+        "card-title": "Standard",
+        "card-title1": "Leave your information to reserve your spot for the free lesson, and we will contact you soon."
     }
 }
