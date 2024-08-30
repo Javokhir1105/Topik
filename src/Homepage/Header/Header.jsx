@@ -1,5 +1,7 @@
 import React from 'react'
 import rasn from '../../assets/logo1.png'
+import rasm2 from '../../assets/images.png'
+import { Button, Dropdown } from 'antd';
 import {useTranslation } from 'react-i18next';
 
 function Header() {
@@ -8,12 +10,47 @@ function Header() {
   const changeLanguage = (lng) => {
    i18n.changeLanguage(lng.target.value)
   };
+  const items = [
+    {
+      key: '1',
+      label: (
+        <a href="#" className="header-link text-xl w-30 ">{t('header.header-title2')}</a>
+      ),
+    },
+    {
+      key: '2',
+      label: (
+        <a href="#" className="header-link text-xl">{t('header.header-title3')}</a>
+      ),
+    },
+    {
+      key: '3',
+      label: (
+        <a href="#" className="header-link text-xl">{t('header.header-title4')}</a>
+      ),
+    },
+    {
+      key: '4',
+      label: (
+        <a href="#" className="header-link text-xl w-60">{t('header.header-title5')}</a>
+      ),
+    },
+  ];
   return (
     <div className='header  '>
       <div className="container max-w-screen-2xl relative  ">
         <div className="header-container flex justify-evenly  bg-white top-0 z-10 max-xl:items-center ">
           <img src={rasn} alt="" className="header-logo max-xl:w-30 h-20" />
           <div className="header-right max-w-6xl flex justify-evenly  gap-12 items-center max-sm:gap-6 ">
+          <Dropdown
+      menu={{
+        items,
+      }}
+      placement="bottom"
+      arrow
+    >
+      <Button className='header-btn max-2xl:hidden max-lg:block text-lg '>Menu</Button>
+      </Dropdown>
             <p className="header-text max-w-40 items-left text-lg max-xl:hidden ">{t('header.header-title1')}</p>
             <ul className="header-list max-w-4xl flex gap-8 max-xl:gap-4 max-lg:hidden ">
               <a href="#" className="header-link text-xl w-30 ">{t('header.header-title2')}</a>
@@ -28,8 +65,8 @@ function Header() {
               <option value="ja">Japan</option>
             </select>
             <ul className="header-list-2 max-[420px]:hidden">
-              <a href='+998908842515' className="header-bond text-xl max-md:text-lg max-sm:text-sm">+998-(90)-884-11-22</a>
-              <p className="header-text-2 text-xl max-md:text-xl max-sm:text-sm">{t('header.header-title6')}</p>
+              <a href='+998908842515' className="header-bond text-xl max-md:text-lg max-sm:hidden">+998-(90)-884-11-22</a>
+              <p className="header-text-2 text-xl max-md:text-xl max-sm:hidden">{t('header.header-title6')}</p>
             </ul>
           </div>
         </div>

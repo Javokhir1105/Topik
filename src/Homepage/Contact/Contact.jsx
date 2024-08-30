@@ -95,14 +95,14 @@ function Contact() {
                             </ul>
                         </div>
                     </div>
-                    <button onClick={showModal} className="contact-btn mt-6 p-8 px-28 border-2 rounded-full border-green-700 bg-emerald-500 text-white text-xl">{t('contact.contact-title20')}</button>
+                    <button onClick={showModal} className="contact-btn mt-6 p-8 px-28 border-2 rounded-full border-green-700 bg-emerald-400 text-white text-xl hover:bg-emerald-600 active:bg-yellow-400">{t('contact.contact-title20')}</button>
                     <Modal className='Modal' open={isModalOpen} onOk={handleOk} onCancel={handleCancel} footer={""}>
                         <form className='form text-center' onSubmit={sendMessageToTelegram}>
                             <h1 className="header-m-h1 text-3xl">{t('contact.contact-title17')}</h1>
                             <p className="header-m-p text-xl">{t('contact.contact-title18')}</p>
                             <input className='Contact-input border-3 border-black-400 mt-6 mb-4 w-5/6 h-10' type="text" minLength={2} placeholder='name' onChange={(e) => setName(e.target.value)} required />
                             <input className='Contact-input border-3 border-black-400 w-5/6 h-10' type='number' minLength={2} placeholder='+998987654321' onChange={(e) => setPhone(e.target.value)} required /><br />
-                            <button type='submit' className="header-btn border-2 p-2 px-24 mt-6 border-green-400 bg-green-500">{t('contact.contact-title19')}</button>
+                            <button type='submit' className="header-btn border-2 p-2 px-24 mt-6  text-lg border-green-400 bg-green-400 hover:bg-green-600 active:bg-yellow-300 text-black">{t('contact.contact-title19')}</button>
                         </form>
                     </Modal>
                 </div>

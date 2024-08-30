@@ -75,3 +75,7 @@
     border-radius: 1px solid #ABDDB1CC;
     margin-top: 10px;
 }
+.question__btn:hover{
+    background:aqua;
+    color:black
+}

@@ -23,7 +23,7 @@ function Content() {
                         </li>
                     </ul>
                     <ul className="content-item-end ">
-                        <button className="content-btn mt-6 p-8 px-20 border-2 rounded-full border-green-700 bg-emerald-500 text-white text-xl">{t('content.content-title6')}</button>
+                        <button className="content-btn mt-6 p-8 px-20 border-2 rounded-full border-green-700 hover:bg-emerald-700 active:bg-blue-700 bg-emerald-400 text-white text-xl">{t('content.content-title6')}</button>
                         <p className="content-text-last mt-6 ml-8 text-xl">{t('content.content-title5')}</p>
                     </ul>
                     <img src={rasm} alt="" className="content-img absolute  right-14 top-0 max-w-5xl max-xl:max-w-3xl buttom-0 top-16 z-0 max-lg:invisible" />

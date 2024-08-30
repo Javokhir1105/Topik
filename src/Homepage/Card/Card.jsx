@@ -58,7 +58,7 @@ function Card({ price, img, text, title }) {
           <p className="card-text text-left  max-lg:text-2xl max-md:text-lg"> {text}</p>
         </li>
         <li className="card-list-2 flex items-center justify-between">
-          <button onClick={showModal} className="card-btn text-xl p-2 px-6 bg-green-600 rounded-full text-white max-lg:text-2xl max-sm:text-xl mt-4">{t('login.login-text9')}</button>
+          <button onClick={showModal} className="card-btn text-xl p-2 px-6 bg-green-500 rounded-full text-white  hover:bg-green-600 active:bg-yellow-300 max-lg:text-2xl max-sm:text-xl mt-4">{t('login.login-text9')}</button>
           <p className="card-texts text-xl text-green-600">{price}</p>
         </li>
       </div>
@@ -68,7 +68,7 @@ function Card({ price, img, text, title }) {
           <p className="header-m-p text-xl">{t('card.card-title1')}</p>
           <input className='Contact-input border-3 border-black-400 mt-6 mb-4 w-5/6 h-10' type="text" minLength={2} placeholder='name' onChange={(e) => setName(e.target.value)} required />
           <input className='Contact-input border-3 border-black-400 w-5/6 h-10' type='number' minLength={2} placeholder='+998987654321' onChange={(e) => setPhone(e.target.value)} required /><br />
-          <button type='submit' className="header-btn border-2 p-2 px-24 mt-6 border-green-400 bg-green-500">{t('contact.contact-title19')}</button>
+          <button type='submit' className="header-btn border-2 p-2 px-24 mt-6 text-lg border-green-400 bg-green-500 hover:bg-green-600 active:bg-yellow-300">{t('contact.contact-title19')}</button>
         </form>
       </Modal>
     </div>
