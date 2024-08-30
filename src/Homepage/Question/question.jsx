@@ -38,7 +38,7 @@ export default function Question() {
             <div className="container max-md-text-center">
                 <div className="question__container max-w-screen-2xl items-center max-md:block text-center max-sm:mr-12 ">
                     <ul className='question__list max-md: text-center '>
-                        <h1 className='question__title text-left text-4xl max-md:text-center py-2 text-5xl max-[440px]:ml-12'>{t('last.last-text1')}</h1>
+                        <h1 className='question__title text-left text-4xl max-md:text-center py-2 text-5xl max-[440px]:ml-0'>{t('last.last-text1')}</h1>
                         <p className='question__text text-left max-md:text-center text-2xl py-4 mb-4'>{t('last.last-text2')}</p>
                     </ul>
                     <ul className='question__items max-lg:ml-12 max-sm:ml-0'>

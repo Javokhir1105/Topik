@@ -9,7 +9,7 @@ function Content() {
     return (
         <div className='Content'>
             <div className="container max-w-screen-2xl  ">
-                <div className="content-container relative ml-20 mt-28 max-md:text-center ml-8 max-sm:ml-4 ">
+                <div className="content-container relative ml-20 mt-16 max-md:text-center ml-8 max-sm:ml-4 ">
                     <h4 className="content-title mt-6 text-lg ">{t('content.content-title1')}</h4>
                     <h1 className="content-head text-6xl max-w-4xl leading-snug mt-6 max-xl:text-4xl max-xl:max-w-2xl max-[500px]:text-2xl">{t('content.content-title2')}</h1>
                     <ul className="content-list flex max-w-3xl mt-10 max-xl:block flex-row max-md:text-left">

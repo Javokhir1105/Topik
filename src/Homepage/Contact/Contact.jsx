@@ -54,10 +54,14 @@ function Contact() {
             .then((response) => response.json())
             .then((res) => {
                 alert("Yuborildi");
+                setIsModalOpen(false)
             })
             .catch((error) => {
                 console.log("Error", error);
-            });
+            })
+            .finally(()=>{
+           setIsModalOpen(false)
+            })
     };  
     const notify = () => toast("Wow so easy!");
     return (

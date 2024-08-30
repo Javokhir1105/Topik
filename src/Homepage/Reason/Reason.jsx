@@ -25,7 +25,7 @@ function Reason() {
                     <p className="reason-text text-md py-2 ">{t('reason.reason-text3')}</p>
                 </ul>
             </div>
-            <div className="reason-top flex  max-w-screen-2xl  justify-evenly py-20 max-lg:block py-0  ">
+            <div className="reason-top flex  max-w-screen-2xl  justify-evenly py-20 max-lg:block pt-0  ">
                 <ul className="reason-list  max-w-sm p-6 shadow-lg max-lg:mt-8 max-sm:max-w-full">
                     <h1 className="reason-title w-20 h-20 text-center p-3 rounded-lg text-5xl text-white bg-blue-300 ">04</h1>
                     <h2 className="reason-subtitle text-2xl py-5">{t('reason.reason-text6')}</h2>
